@@ -5,9 +5,9 @@ import repository.ClubeRepository;
 
 public class ClubeService {
 	
-	public Clube getClube() {
+	public Clube getClube(int indice) {
 		ClubeRepository clubeRepository = new ClubeRepository();
-		return clubeRepository.getClube();
+		return clubeRepository.getClube(indice);
 	}
 	
 	public void setClube(Clube clube) {

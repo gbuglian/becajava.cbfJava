@@ -5,13 +5,13 @@ import repository.PosicaoRepository;
 
 public class PosicaoService {
 	
-	public Posicao getPosicao() {
+	public Posicao getPosicao(int indice) {
 		PosicaoRepository repository = new PosicaoRepository();
-		return repository.getPosicao();
+		return repository.getPosicao(indice);
 	}
 	
 	public void setPosicao(Posicao posicao) {
 		PosicaoRepository repository = new PosicaoRepository();
-		repository.SetPosicao();
+		repository.SetPosicao(posicao);
 	}
 }
